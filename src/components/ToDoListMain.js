@@ -4,8 +4,8 @@ function ToDoListMain({todos, toggleTodo, deleteTodo}) {
 
   return (
     <>
-    <h1>Todo List</h1>
-    <ul className="list">
+    <h1 className="text-4xl mt-3">Todo List</h1>
+    <ul className="list container">
     {todos.map(todo => {
       return (
         <ToDoItem 

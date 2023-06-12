@@ -10,19 +10,18 @@ function App() {
     return JSON.parse(localValue)
   });
 
+
   useEffect(() => {
     localStorage.setItem(item, JSON.stringify(todos))
   }, [todos])
 
   function addTodo(title){
-    let currentDate = new Date();
-    let options = { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' };
-    let formattedDate = currentDate.toLocaleString('en-US', options);
+
 
     setTodos(currentTodos => {
       return [ 
         ...currentTodos, 
-        { id: crypto.randomUUID(), title, date: formattedDate, completed: false},
+        { id: crypto.randomUUID(), title, completed: false},
       ]
     })
   }
@@ -45,12 +44,16 @@ function App() {
   }
 
   return (
-    <>
-      <ToDoForm onSubmit={addTodo} />
-      <ToDoListMain todos={todos} 
+    <div className="container">
+      <ToDoForm 
+      onSubmit={addTodo} 
+      />
+      <ToDoListMain  
+      todos={todos} 
       toggleTodo={toggleTodo} 
       deleteTodo={deleteTodo}/>
-    </>
+    </div>
+
   );
 }
 
