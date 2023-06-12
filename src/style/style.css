@@ -4,6 +4,10 @@ label, button, h1 {
     color: #fff;
 }
 
+.todo-heading {
+  border-bottom: 1px solid var(--app-blue);
+}
+
 form {
 }
 
@@ -33,7 +37,7 @@ input{
   }
 
   input::placeholder{
-    color: #cacaca;
+    color: #a19797;
   }
 
 

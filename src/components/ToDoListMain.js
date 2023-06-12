@@ -4,7 +4,7 @@ function ToDoListMain({todos, toggleTodo, deleteTodo}) {
 
   return (
     <>
-    <h1 className="text-4xl mt-3">Todo List</h1>
+    <h1 className="todo-heading text-4xl mt-3">Todo List</h1>
     <ul className="list container">
     {todos.map(todo => {
       return (
