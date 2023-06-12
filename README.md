@@ -1,6 +1,6 @@
 # Check out the project here!
 
-This project was bootstrapped with [Demo](https://enjaeantonio.github.io/todo-list).
+[Demo](https://enjaeantonio.github.io/todo-list).
 
 ## Available Scripts
 
