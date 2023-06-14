@@ -35,7 +35,6 @@ const [errorMessage, setErrorMessage] = useState("");
       id="item" 
       title="Create Task"
       className={`px-2 py-2`}
-      maxLength={25}
       onFocus={handleInput}
       onChange={handleInput} />
     </div>

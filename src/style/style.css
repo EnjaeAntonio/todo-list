@@ -58,6 +58,15 @@ input{
   cursor: pointer;
 }
 
+.todo-items{
+  width: 75%;
+}
+
+.font-box{
+  justify-content: right;
+  width: 25%;
+}
+
 .todo-box.unfinished {
   background: rgb(255,60,87);
   background: linear-gradient(90deg, rgba(255,60,87,1) 0%, rgba(53,53,53,0.9) 1%);
