@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import ToDoForm from './components/ToDoForm';
 import ToDoListMain from './components/ToDoListMain';
 function App() {
-  const item = "ITEM"
+  const item = "ITEM";
   const [todos, setTodos] = useState(() => {
     const localValue = localStorage.getItem(item)
     if(localValue == null) return []
@@ -17,8 +17,7 @@ function App() {
 
   function addTodo(title){
     setTodos(currentTodos => {
-      return [ 
-        ...currentTodos, 
+      return [ ...currentTodos, 
         { id: crypto.randomUUID(), title, completed: false},
       ]
     })
@@ -49,7 +48,8 @@ function App() {
       <ToDoListMain  
       todos={todos} 
       toggleTodo={toggleTodo} 
-      deleteTodo={deleteTodo}/>
+      deleteTodo={deleteTodo}
+      />
     </div>
 
   );
