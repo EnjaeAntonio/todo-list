@@ -24,17 +24,13 @@ const [errorMessage, setErrorMessage] = useState("");
   return (
     <form onSubmit={handleSubmit}>
     <div className="grid">
-      <label 
-      htmlFor="item" 
-      className="text-2xl"
-      >New item</label>
       <input 
       value={newItem} 
       placeholder={errorMessage ? errorMessage : "Create Todo!"} 
       type="text" 
       id="item" 
       title="Create Task"
-      className={`px-2 py-2`}
+      className={`px-2 py-2 mt-4`}
       onFocus={handleInput}
       onChange={handleInput} />
     </div>
