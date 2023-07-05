@@ -19,9 +19,11 @@
   --app-orange: #ff833c;
   --app-blue: #5d73ff;
   --app-blue-hover: #364ee6;
- }
+}
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -36,7 +38,7 @@
 
 html {
   height: 100%;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 100%;
   font-weight: 400;
   line-height: 1.5;
@@ -50,28 +52,48 @@ body {
   height: 100%;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-li, a, i, figure, img, button,
-input[type=button], input[type=submit] {
+li,
+a,
+i,
+figure,
+img,
+button,
+input[type="button"],
+input[type="submit"] {
   -webkit-user-select: none;
-     -moz-user-select: none; 
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
-
-input[type=button], input[type=submit], input[type=clear], button, a {
+input[type="button"],
+input[type="submit"],
+input[type="clear"],
+button,
+a {
   cursor: pointer;
 }
 
@@ -80,11 +102,12 @@ input[type=button], input[type=submit], input[type=clear], button, a {
     scroll-behavior: auto;
   }
 
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
-

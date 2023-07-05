@@ -1,51 +1,57 @@
 @import url(./reset.css);
 
-label, button, h1 {
-    color: #fff;
+label,
+button,
+h1 {
+  color: #fff;
 }
 
 .todo-heading {
   border-bottom: 1px solid var(--app-blue);
 }
 
-button, input {
-    border-radius: 5px;
+button,
+input {
+  border-radius: 5px;
 }
 
 .btn-add {
-    width: 100%;
-    border: 1px solid var(--app-blue);
-    background-color: rgb(60, 87, 255, .15);
-    color: var(--app-blue);
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
+  width: 100%;
+  border: 1px solid var(--app-blue);
+  background-color: rgb(60, 87, 255, 0.15);
+  color: var(--app-blue);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
-.btn-add:hover{
+.btn-add:hover {
   color: var(--app-green);
   border: 1px solid var(--app-green);
 }
 
-input{
-    border: 1px solid #ffffff09;
-    background-color: var(--app-blue);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
-    color: rgb(255, 255, 255);
-  }
-.fa-check, .trash-btn, .todo-icon {
+input {
+  border: 1px solid #ffffff09;
+  background-color: var(--app-blue);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px,
+    rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+  color: rgb(255, 255, 255);
+}
+.fa-check,
+.trash-btn,
+.todo-icon {
   color: gray;
 }
 
-.todo-icon:hover{
+.todo-icon:hover {
   color: var(--app-red);
 }
 
-.trash-btn:hover{
+.trash-btn:hover {
   color: var(--app-red);
 }
 
-.fa-check:hover{
+.fa-check:hover {
   color: var(--app-green);
 }
 
@@ -53,28 +59,37 @@ input{
   color: var(--app-green);
 }
 
-.todo-icon, .trash-btn {
+.todo-icon,
+.trash-btn {
   width: 12px;
   cursor: pointer;
 }
 
-.todo-items{
+.todo-items {
   width: 75%;
 }
 
-.font-box{
+.font-box {
   justify-content: right;
   width: 25%;
 }
 
 .todo-box.unfinished {
-  background: rgb(255,60,87);
-  background: linear-gradient(90deg, rgba(255,60,87,1) 0%, rgba(53,53,53,0.9) 1%);
+  background: rgb(255, 60, 87);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 60, 87, 1) 0%,
+    rgba(53, 53, 53, 0.9) 1%
+  );
 }
 
 .todo-box.finished {
-  background: rgb(0,255,25);
-  background: linear-gradient(90deg, rgba(0,255,25,1) 0%, rgba(53,53,53,0.9) 1%);
+  background: rgb(0, 255, 25);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 25, 1) 0%,
+    rgba(53, 53, 53, 0.9) 1%
+  );
 }
 
 .completed-text {
